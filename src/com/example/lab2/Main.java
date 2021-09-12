@@ -24,7 +24,7 @@ public class Main {
 		al.add(new Student(110, "Yang", 27));
 		
 		Collections.sort(al);
-		//Traverse elements of arraylist (method #1)
+		//Traverse elements of arraylist (ordered)
 		for (Student s : al) {
 			System.out.println(s.toString());
 		}
@@ -32,7 +32,7 @@ public class Main {
 		System.out.println("Student List (reverse ordered by name)");
 		
 		Collections.sort(al, Collections.reverseOrder());
-		//Traverse elements of arraylist (method #2)
+		//Traverse elements of arraylist (reverse ordered)
 		for (int i=0; i<al.size(); i++) {
 			System.out.println(al.get(i).toString());
 		}
